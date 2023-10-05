@@ -1,0 +1,518 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow: hidden; /* Hide scrollbars */
+	overflow-y: scroll; /* Add the ability to scroll */
+	line-height: 1.5;
+	color: white;
+	background-color: black;
+	max-width: 1920px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.hero {
+    overflow: hidden;
+    background-image: url(images/index.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+header {
+	display: flex;
+	padding: 20px;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+    margin-left: 20px;
+}
+
+.headerlogo {
+	flex: 1;
+	width: 120px;
+	cursor: pointer;
+	margin: auto;
+}
+
+.headernav {
+	flex: 1;
+	text-align: right;
+	padding: 0px 10px;
+	margin: 5px 0px;
+}
+nav {
+    padding: 8px 0px;
+	color: white;
+	background-color: rgba(242,242,242,0.52);
+	float: right;
+}
+
+
+nav, ul li {
+    list-style: inline-block;
+    display: inline-block;
+    margin: 0px 20px;
+    font-size: 22px;
+}
+
+/* a link that has been visited */
+a:link {
+	text-decoration: none;
+	color: #022601;
+}
+
+/* A link that has not been visited */
+a:visited {
+	text-decoration: none;
+	color: #022601;
+}
+
+
+
+.logo {
+	width: 120px;
+	cursor: pointer;
+	margin: auto;
+}
+
+
+.quote {
+	float: left;
+	overflow: hidden;
+	background-color: rgba(2,38,1,0.49);
+	font-family: 'Passion One', cursive;
+	font-size: 64px;
+	margin-left: 20px;
+	margin-top: 300px;
+	margin-bottom: 52px;
+	padding: 10px 20px;
+}
+
+.quote h1 {
+	font-weight: 900;
+}
+
+.qutoe, h2 {
+ 	font-family: 'Passion One', cursive;
+	font-weight: 900;
+	color: #8EBF24;
+	font-size: 164px;
+    line-height: 42px;
+    margin-bottom: 10px;
+}
+
+button {
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 600;
+}
+
+.button1 {
+	background-color: transparent;
+  	border: 3px solid white;
+  	color: white;
+  	padding: 5px 10px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 24px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+	transition: 0.3s;
+}
+
+.button1:hover {
+	background-color: white;
+	color: #022601;
+	border: 3px solid white;
+}
+
+.imagebar-container {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+
+.imagebar1 {
+    overflow: hidden;
+    flex: 1;
+    background-image: url(images/Donate.jpg);
+    background-size: cover;
+	width: 65%;
+    height: 399px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 30px;
+    color: white;
+}
+
+.imagebar2 {
+    overflow: hidden;
+    flex: 1;
+    background-image: url(images/ourstory.jpg);
+    background-size: cover;
+	width: 65%;
+    height: 399px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagetext1 {
+	float: left;
+	overflow: hidden;
+	background-color: rgba(2,38,1,0.49);
+   	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	margin-top: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+	align-content: center;
+}
+
+.imagetext1 h1 {
+	font-size: 44px;
+	font-family: 'Passion One', cursive;
+	font-weight: 700;
+	text-align: center;
+}
+
+.imagetext1 h2 {
+   	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	font-size: 21px;
+	color: white;
+	padding-bottom: 5px;
+}
+
+.imagetext1 p {
+	font-size: 18px;
+}
+
+.imagetext1 button {
+	margin-left: 470px;
+    margin-top: 48px;
+}
+
+
+.imagetext2 {
+	float: left;
+	overflow: hidden;
+	background-color: rgba(2,38,1,0.49);
+   	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	margin-top: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+	align-content: center;
+}
+
+.imagetext2 h1 {
+	font-size: 44px;
+	font-family: 'Passion One', cursive;
+	font-weight: 700;
+	text-align: center;
+}
+
+.imagetext2 h2 {
+   	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	font-size: 21px;
+	color: white;
+	padding-bottom: 5px;
+}
+
+.imagetext2 p {
+	font-size: 18px;
+}
+
+.imagetext2 button {
+	margin-left: 470px;
+    margin-top: 20px;
+}
+
+
+.locationnews {
+	margin: 100px 100px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 20px;
+	padding-bottom: 100px;
+	background-size: cover;
+}
+
+
+.locationbar {
+	overflow: hidden;
+	background-size: cover;
+
+}
+
+.locationtext {
+	display: flex;
+	color: whtie;
+
+}
+
+.text1 h1 {
+	flex: 1;
+	font-size: 54px;
+	font-family: 'Passion One', cursive;
+	font-weight: 700;
+
+}
+
+.text2 h2 {
+	flex: ;
+	font-size: 28px;
+   	font-family: 'Rajdhani', sans-serif;
+	font-weight: 600;
+	color: white;
+	margin: 27px 20px;
+
+}
+
+.locationimages {
+	display: flex;
+	width: 278px;
+	height: auto;
+	margin: 50px 20px 180px 50px;
+
+}
+
+.locationimage1 {
+	flex: 1;
+	background-repeat: no-repeat;
+	margin-left: 40px;
+	margin-right: 20px;
+	transition: 0.3s;
+}
+
+.locationimage1:hover {
+	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.locationimage2 {
+	flex: 1;
+	background-repeat: no-repeat;
+	margin: 0 20px;
+	transition: 0.3s;
+}
+
+.locationimage2:hover {
+	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.locationimage3 {
+	flex: 1;
+	background-repeat: no-repeat;
+	margin: 0 20px;
+	transition: 0.3s;
+}
+
+.locationimage3:hover {
+	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.locationimage4 {
+	flex: 1;
+	background-repeat: no-repeat;
+	margin: 0 20px;
+	transition: 0.3s;
+}
+
+.locationimage4:hover {
+	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.newsbox1 {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 60px 0 0px;
+}
+
+.newstext {
+	font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0px 20px 0px 20px;
+    margin: 0 10px 0px 0px;
+    border: 5px solid white;
+    height: 518px;
+}
+
+.newstext h1 {
+	text-align: justify;
+    padding: 5px 10px 5px 10px;
+    margin: 0 64px 0 0px;
+	overflow-y: hidden;
+	white-space: nowrap;
+	font-size: 40px;
+}
+
+.newstext p {
+	font-weight: 500;
+    font-size: 32px;
+    padding: 0 28px 0 10px;
+    margin: 0 0px 0 0;
+}
+
+.newstext h3 {
+	font-weight: 500;
+    font-size: 32px;
+    padding: 0 0px 0 10px;
+    margin: 20px 0px 20px 0;
+}
+
+.newstext h2{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	padding: 0 116px 0 10px;
+    margin: 60px 70px 0 0;
+}
+
+.newstext2 {
+	font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0px 20px 0px 20px;
+    margin: 0 10px 0px 0px;
+    border: 5px solid white;
+    height: 518px;
+}
+
+.newstext2 h1 {
+	text-align: justify;
+    padding: 5px 10px 5px 10px;
+    margin: 0 64px 0 0px;
+	overflow-y: hidden;
+	white-space: nowrap;
+	font-size: 40px;
+}
+
+.newstext2 p {
+	font-weight: 500;
+    font-size: 32px;
+    padding: 0 28px 0 10px;
+    margin: 0 0px 0 0;
+}
+
+.newstext2 h3 {
+	font-weight: 500;
+    font-size: 32px;
+    padding: 0 0px 0 10px;
+    margin: 20px 0px 20px 0;
+}
+
+
+.newstext2 h2{
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	padding: 0 116px 0 10px;
+    margin: 60px 70px 0 0;
+}
+
+hr {
+	border: 3px solid white;
+	margin: 20px 0px 20px 0;
+	width: 468px;
+}
+
+.newsimage {
+	margin: 0px 10px 10px 10px;
+}
+
+.newsimage2 {
+	margin: 0px 20px 10px 0px;
+}
+
+
+.extra-banner {
+	display: flex;
+    overflow: hidden;
+    background-color: #8EBF24;
+    color: #022601;
+    background-size: cover;
+   	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+	padding: 87px 130px;
+}
+
+.bannerlogo {
+	flex: 1;
+	width: 120px;
+	cursor: pointer;
+	margin-left: 40px;
+	margin-right: -100px;
+}
+
+.bannertext {
+	display: flex;
+	flex: 1;
+
+	cursor: pointer;
+	margin-left: -620px;
+}
+
+.bannertext h1 {
+	font-size: 12px;
+}
+
+.bannertext p {
+	text-align: justify;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.collumn1 {
+	margin: 0 100px;
+}
+
+.collumn2 {
+	margin: 0 100px;
+}
+
+.collumn3 {
+	margin: 0 100px;
+}
+
+.collumn4 {
+	margin: 0 100px;
+}
+
+
+.Copyright-banner {
+    overflow: hidden;
+    background-color: #022601;
+    color: #8EBF24;
+    background-size: cover;
+   	font-family: 'Rajdhani', sans-serif;
+	font-weight: 700;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	margin: 5px 5px;
+    padding: 10px 10px;
+}
